@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stylish Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calculator">
+    <span id="show">Calculator</span>
+    <input type="text" disabled id="userInput" placeholder="0">
+    
+    <div class="buttons">
+      <button onclick="valueToSet('del')">Esc</button>
+      <button onclick="valueToSet('c')">C</button>
+      <button onclick="valueToSet('**')">^</button>
+      <button onclick="valueToSet('x2')">x²</button>
+
+      <button onclick="valueToSet('7')">7</button>
+      <button onclick="valueToSet('8')">8</button>
+      <button onclick="valueToSet('9')">9</button>
+      <button onclick="valueToSet('/')">/</button>
+
+      <button onclick="valueToSet('4')">4</button>
+      <button onclick="valueToSet('5')">5</button>
+      <button onclick="valueToSet('6')">6</button>
+      <button onclick="valueToSet('*')">*</button>
+
+      <button onclick="valueToSet('1')">1</button>
+      <button onclick="valueToSet('2')">2</button>
+      <button onclick="valueToSet('3')">3</button>
+      <button onclick="valueToSet('-')">-</button>
+
+      <button onclick="valueToSet('0')">0</button>
+      <button onclick="valueToSet('.')">.</button>
+      <button class="equal" onclick="valueToSet('=')">=</button>
+      <button onclick="valueToSet('+')">+</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
